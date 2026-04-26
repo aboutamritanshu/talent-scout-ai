@@ -3,9 +3,16 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Talent Scout — AI Recruiter Agent",
-  description:
-    "An AI-powered talent scouting and engagement agent: parse a JD, match candidates, run simulated outreach, and produce an explainable ranked shortlist.",
+  title: "Talent Scout",
+  description: "AI recruiter agent",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon.png", type: "image/png", sizes: "64x64" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/favicon.png",
+  },
 };
 
 const NAV_STEPS = [
