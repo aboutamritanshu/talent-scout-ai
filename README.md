@@ -260,37 +260,6 @@ We are hiring a Senior React Developer with 4+ years experience in React, TypeSc
 
 Actual values may differ depending on the parsed JD and outreach response. When OpenAI is unavailable, the app returns marked fallback responses so the demo remains end-to-end.
 
-## Hackathon Demo Script
-
-### 3-5 Minute Walkthrough
-
-1. **Start at the dashboard**
-   - Explain that TalentScout AI is a recruiter workflow, not just a scoring page.
-   - Click **Start New Search**.
-
-2. **Parse the JD**
-   - Click **Use Sample JD**.
-   - Click **Parse & Find Candidates**.
-   - Explain the extracted fields: title, skills, experience, location, salary.
-   - Mention fallback parsing keeps the demo safe if API quota is unavailable.
-
-3. **Review matches**
-   - Click **View Matching Candidates**.
-   - Point out Match Score and category score bars.
-   - Explain the formula: skills 40%, experience 25%, domain 20%, education 15%.
-   - Show matched skills, missing skills, and explanation.
-
-4. **Simulate outreach**
-   - Click **Simulate Outreach** on a top candidate.
-   - Walk through the chat transcript.
-   - Explain that the outreach is simulated and not sent to real people.
-   - Explain Interest Score: role response 30%, availability 25%, salary alignment 25%, enthusiasm 20%.
-
-5. **Show shortlist**
-   - Click **Add to Shortlist**.
-   - Explain Combined Score: Match 60% + Interest 40%.
-   - Show best candidate, backup candidate, biggest risk, and recommended next action.
-   - Click **Export Shortlist as JSON** to show recruiter-ready output.
 
 ## Trade-Offs
 
