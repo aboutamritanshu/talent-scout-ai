@@ -1,6 +1,6 @@
 # TalentScout AI
 
-TalentScout AI is an AI-powered recruiting workflow built for the Catalyst Hackathon. It takes a job description, parses the hiring requirements, ranks candidates from a seeded demo talent pool, simulates outreach conversations, measures candidate interest, and produces a recruiter-ready shortlist.
+TalentScout AI is an AI-powered recruiting workflow. It takes a job description, parses the hiring requirements, ranks candidates from a seeded demo talent pool, simulates outreach conversations, measures candidate interest, and produces a recruiter-ready shortlist.
 
 ## Problem Statement
 
