@@ -313,15 +313,15 @@ function MessageBubble({
 
   return (
     <div
-      className={`flex items-end gap-3 ${isAgent ? "justify-start" : "justify-end"} animate-slideup`}
+      className={`flex items-end gap-3 ${isAgent ? "justify-end" : "justify-start"} animate-slideup`}
       style={{ animationDelay: `${delay}ms` }}
     >
-      {isAgent && <Avatar tone="agent" initials={initials} />}
+      {!isAgent && <Avatar tone="candidate" initials={initials} />}
       <div
-        className={`max-w-[78%] rounded-lg border px-4 py-3 ${
+        className={`max-w-[78%] sm:max-w-[80%] rounded-lg border px-4 py-3 ${
           isAgent
-            ? "border-surface-600 bg-surface-800 text-slate-100 rounded-bl-sm"
-            : "border-brand-500/40 bg-brand-100 text-slate-100 rounded-br-sm"
+            ? "border-brand-500/40 bg-brand-100 text-slate-100 rounded-br-sm"
+            : "border-surface-600 bg-surface-700 text-slate-100 rounded-bl-sm"
         }`}
       >
         <div className="mb-1.5 flex items-center justify-between gap-3">
@@ -330,9 +330,9 @@ function MessageBubble({
           </span>
           <span className="text-[10px] text-slate-500">{time}</span>
         </div>
-        <p className="text-sm leading-relaxed">{message.content}</p>
+        <p className="text-sm leading-relaxed break-words">{message.content}</p>
       </div>
-      {!isAgent && <Avatar tone="candidate" initials={initials} />}
+      {isAgent && <Avatar tone="agent" initials={initials} />}
     </div>
   );
 }
