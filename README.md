@@ -43,6 +43,31 @@ Candidate discovery uses `data/candidates.json`, a seeded set of 15 realistic mo
 - Static JSON candidate data
 - Browser `localStorage` for demo workflow state
 
+## APIs & Tools Used
+
+- Next.js 14 — full-stack application framework
+- TypeScript — type-safe development
+- Tailwind CSS — UI styling
+- OpenAI API (gpt-4o-mini) — used for JD parsing and simulated outreach generation
+- Static JSON dataset — seeded candidate pool
+- Browser localStorage — workflow state
+- Vercel — deployment
+- GitHub — version control
+
+## Cost / Free-Tier Declaration
+
+This project uses OpenAI gpt-4o-mini, a low-cost model.
+
+To ensure the app works without API credits:
+- Fallback logic is implemented for JD parsing and outreach
+- The system continues working even if OpenAI API fails
+
+No paid APIs are required for the demo.
+
+No scraping is performed.
+
+All candidates are mock data for demonstration purposes.
+
 ## Setup
 
 ```bash
